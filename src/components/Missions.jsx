@@ -1,5 +1,4 @@
 import React from 'react';
-import Title from './Title';
 import MissionCard from './MissionCard';
 import missions from '../data/missions';
 
@@ -7,7 +6,9 @@ class Missions extends React.Component {
   render() {
     return (
       <div data-testid="missions">
-        <Title headline="Missões" />
+        <div id="missions-div">
+          <h2 id="title-missions">Missões</h2>
+        </div>
         <section>
           {missions.map((element) => (
             <MissionCard
